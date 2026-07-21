@@ -33,7 +33,6 @@ class StoryFetchError(Exception):
     """Raised when a story could not be fetched or parsed from
     Project Gutenberg."""
 
-
 class WorldTales(OVOSSkill):
 
     @classproperty
@@ -58,9 +57,9 @@ class WorldTales(OVOSSkill):
         self.is_reading = False
         self.settings.setdefault('progress', {})
         self.settings.setdefault('last_story', None)
-        # in-memory cache of already-fetched Gutenberg book pages (BeautifulSoup),
-        # keyed by URL - several stories share the same book file, and
-        # 'continue' shouldn't need a fresh fetch either
+        # in-memory cache of already-fetched Gutenberg book pages
+        # (BeautifulSoup), keyed by URL - several stories share the same
+        # book file, and 'continue' shouldn't need a fresh fetch either
         self._book_soup_cache = {}
         self.index = self._load_index()
         if not self.index:
@@ -136,7 +135,9 @@ class WorldTales(OVOSSkill):
             raise StoryFetchError(f"unknown story: {story_title}")
         self.is_reading = True
         paragraphs = self.get_story_paragraphs(entry)
-        self.speak_dialog('title_by_author', data={'title': story_title, 'book': entry.get('book', '')}, wait=True)
+        self.speak_dialog('title_by_author',
+                           data={'title': story_title, 'book': entry.get('book', '')},
+                           wait=True)
         self.log.info(entry["url"])
         for i, para in enumerate(paragraphs[bookmark:], start=bookmark):
             self.settings['progress'][story_title] = i + 1
@@ -178,163 +179,34 @@ class WorldTales(OVOSSkill):
 
     def get_story_paragraphs(self, entry):
         """Extract a single story's paragraphs from its Project Gutenberg
-        book page, bounded by its own story anchor and the next one in the
-        same file. Different Gutenberg transcriptions use either
-        '<a id="link...">' (standalone, right before the <h2> title) or
-        '<a name="link...">' (nested inside the <h2>) for these anchors -
-        we match on either attribute."""
+        book page. Different Gutenberg transcriptions use different anchor
+        schemes ('<a id="link...">' before the <h2> title, '<a name="link...">'
+        nested inside it, or plain '<a id="chapNN">'), and some stories
+        (e.g. 'A Voyage to Lilliput') contain their own nested sub-chapter
+        anchors - so rather than guessing a prefix, we stop collecting
+        paragraphs at the next anchor that's a *different story in this
+        same book* per our own index, whatever its id/name actually is."""
         soup = self._get_book_soup(entry["url"])
         anchor = entry["anchor"]
         anchor_tag = soup.find(id=anchor) or soup.find(attrs={"name": anchor})
         if anchor_tag is None:
             raise StoryFetchError(f"anchor {anchor} not found in {entry['url']}")
+
+        other_anchors = {
+            e["anchor"] for e in self.index.values()
+            if e["url"] == entry["url"] and e["anchor"] != anchor
+        }
+
         paragraphs = []
         for el in anchor_tag.find_all_next():
-            if el.name == "a" and (
-                (el.get("id") or "").startswith("link") or (el.get("name") or "").startswith("link")
-            ):
-                break
+            if el.name == "a":
+                el_anchor = el.get("id") or el.get("name") or ""
+                if el_anchor in other_anchors:
+                    break
             if el.name == "p":
                 text = el.get_text(" ", strip=True)
                 if text:
                     paragraphs.append(text)
         if not paragraphs:
             raise StoryFetchError(f"no story text found at {entry['url']}#{anchor}")
-        return paragraphs
-
-    def _index_path_for_lang(self, lang):
-        return os.path.join(os.path.dirname(__file__), "locale", lang, "index.json")
-
-    def _load_index(self):
-        lang = self.lang
-        path = self._index_path_for_lang(lang)
-        if not os.path.isfile(path):
-            # this language has no curated index yet - fall back to the
-            # bundled English one rather than having an empty skill
-            # (see README for current per-language coverage)
-            self.log.info(f"No story index for '{lang}', falling back to en-us")
-            path = self._index_path_for_lang("en-us")
-        if not os.path.isfile(path):
-            return {}
-        try:
-            with open(path, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except (OSError, ValueError) as e:
-            self.log.error(f"Could not read bundled story index: {e}")
-            return {}
-
-    @intent_handler('Tales.intent')
-    def handle_Tales(self, message: Message):
-        if not self.index:
-            self.speak_dialog('story_unavailable')
-            return
-        if message.data.get("tale", "") is None:
-            response = self.get_response('Tales', num_retries=1)
-            if not response:
-                return
-        else:
-            response = message.data.get("tale")
-        result = match_one(response, list(self.index.keys()))
-        if result[1] < 0.8:
-            self.speak_dialog('that_would_be', data={"story": result[0]})
-            response = self.ask_yesno('is_it_that')
-            if not response or response == 'no':
-                self.speak_dialog('no_story')
-                return
-        self.speak_dialog('i_know_that', data={"story": result[0]}, wait=True)
-        title = result[0]
-        self.settings['last_story'] = title
-        try:
-            self.tell_story(title, 0)
-        except StoryFetchError as e:
-            self.log.error(f"Could not fetch story: {e}")
-            self.is_reading = False
-            self.speak_dialog('story_unavailable')
-
-    @intent_handler('continue.intent')
-    def handle_continue(self, message: Message):
-        title = self.settings.get('last_story')
-        if title is None:
-            self.speak_dialog('no_story_to_continue')
-            return
-        self.speak_dialog('continue', data={"story": title}, wait=True)
-        start = self.settings.get('progress', {}).get(title, 0)
-        try:
-            self.tell_story(title, start)
-        except StoryFetchError as e:
-            self.log.error(f"Could not fetch story: {e}")
-            self.is_reading = False
-            self.speak_dialog('story_unavailable')
-
-    def tell_story(self, story_title, bookmark):
-        entry = self.index.get(story_title)
-        if entry is None:
-            raise StoryFetchError(f"unknown story: {story_title}")
-        self.is_reading = True
-        paragraphs = self.get_story_paragraphs(entry)
-        self.speak_dialog('title_by_author', data={'title': story_title, 'book': entry.get('book', '')}, wait=True)
-        self.log.info(entry["url"])
-        for i, para in enumerate(paragraphs[bookmark:], start=bookmark):
-            self.settings['progress'][story_title] = i + 1
-            if self.is_reading is False:
-                break
-            sentenses = para.split('. ')
-            for sentens in sentenses:
-                if self.is_reading is False:
-                    sentens = ""
-                    break
-                else:
-                    self.speak_dialog(sentens, wait=True)
-        if self.is_reading is True:
-            self.is_reading = False
-            self.settings['progress'].pop(story_title, None)
-            if self.settings.get('last_story') == story_title:
-                self.settings['last_story'] = None
-            self.speak_dialog('from_Tales')
-
-    def stop(self):
-        self.log.info('stop is called')
-        if self.is_reading is True:
-            self.speak_dialog('stop_telling_tales')
-            self.speak_dialog('from_Tales')
-            self.is_reading = False
-            return True
-        else:
-            return False
-
-    def _get_book_soup(self, url):
-        if url in self._book_soup_cache:
-            return self._book_soup_cache[url]
-        try:
-            r = requests.get(url, timeout=15)
-            r.raise_for_status()
-            r.encoding = r.apparent_encoding
-            soup = BeautifulSoup(r.text, "html.parser")
-        except requests.RequestException as e:
-            raise StoryFetchError(f"failed to fetch {url}: {e}") from e
-        self._book_soup_cache[url] = soup
-        return soup
-
-    def get_story_paragraphs(self, entry):
-        """Extract one story's paragraphs from its Gutenberg book page.
-
-        Each story starts at an <a id="link..."> anchor followed by an <h2>
-        title and a run of <p> paragraphs, ending at the next such anchor
-        (the next story in the same book file). See scripts/build_lang_index.py
-        for how the anchors were harvested.
-        """
-        soup = self._get_book_soup(entry["url"])
-        anchor_tag = soup.find(id=entry["anchor"])
-        if anchor_tag is None:
-            raise StoryFetchError(f"anchor {entry['anchor']} not found in {entry['url']}")
-        paragraphs = []
-        for el in anchor_tag.find_all_next():
-            if el.name == "a" and (el.get("id") or "").startswith("link"):
-                break
-            if el.name == "p":
-                text = el.get_text(" ", strip=True)
-                if text:
-                    paragraphs.append(text)
-        if not paragraphs:
-            raise StoryFetchError(f"no story text found at {entry['url']}#{entry['anchor']}")
         return paragraphs

@@ -11,11 +11,13 @@ pip install ovos-skill-worldtales
 
 ## About
 This skill tells classic fairy tales, folk tales and fables collected from
-storytellers around the world - starting with **Andrew Lang's twelve
-"Coloured" Fairy Books** (389 stories drawn from French, German, Norse,
-Russian, Arabic, Japanese and many other traditions), sourced from
+storytellers around the world - starting with **eleven of Andrew Lang's
+twelve "Coloured" Fairy Books** (380+ stories drawn from French, German,
+Norse, Russian, Arabic, Japanese and many other traditions), sourced from
 [Project Gutenberg](https://www.gutenberg.org/), the public-domain digital
-library.
+library. The twelfth, the *Olive Fairy Book*, uses an incompatible
+page-based anchoring scheme on Gutenberg and isn't included yet - see
+[#2](https://github.com/andlo/ovos-skill-worldtales/issues/2).
 
 This is a companion to
 [`ovos-skill-fairytales`](https://github.com/andlo/ovos-skill-fairytales)

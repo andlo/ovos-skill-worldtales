@@ -78,7 +78,7 @@
     "url": "https://www.gutenberg.org/files/3027/3027-h/3027-h.htm"
   },
   "Ball-carrier and the Bad One": {
-    "anchor": "link2H_4_0004",
+    "anchor": "chap02",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -108,13 +108,13 @@
     "url": "https://www.gutenberg.org/files/6746/6746-h/6746-h.htm"
   },
   "Brother And Sister": {
-    "anchor": "link2H_4_0008",
+    "anchor": "chap07",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
   },
   "Bushy Bride": {
-    "anchor": "link2H_4_0032",
+    "anchor": "chap32",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -144,7 +144,7 @@
     "url": "https://www.gutenberg.org/files/2435/2435-h/2435-h.htm"
   },
   "Dapplegrim": {
-    "anchor": "link2H_4_0024",
+    "anchor": "chap24",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -162,7 +162,7 @@
     "url": "https://www.gutenberg.org/files/6746/6746-h/6746-h.htm"
   },
   "Drakestail": {
-    "anchor": "link2H_4_0019",
+    "anchor": "chap19",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -192,13 +192,13 @@
     "url": "https://www.gutenberg.org/files/7277/7277-h/7277-h.htm"
   },
   "Farmer Weatherbeard": {
-    "anchor": "link2H_4_0029",
+    "anchor": "chap29",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
   },
   "Father Grumbler": {
-    "anchor": "link2H_4_0007",
+    "anchor": "chap05",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -216,22 +216,16 @@
     "url": "https://www.gutenberg.org/files/6746/6746-h/6746-h.htm"
   },
   "Fortune and the Wood-Cutter": {
-    "anchor": "link2H_4_0018",
+    "anchor": "chap19",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
   },
   "Graciosa And Percinet": {
-    "anchor": "link2H_4_0014",
+    "anchor": "chap14",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
-  },
-  "Habogi": {
-    "anchor": "link2H_4_0011",
-    "author": "Andrew Lang",
-    "book": "Brown Fairy Book",
-    "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
   },
   "Hans, the Mermaid's Son": {
     "anchor": "link2H_4_0015",
@@ -270,7 +264,7 @@
     "url": "https://www.gutenberg.org/files/641/641-h/641-h.htm"
   },
   "How Ball-carrier Finished His Task": {
-    "anchor": "link2H_4_0005",
+    "anchor": "chap03",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -282,7 +276,7 @@
     "url": "https://www.gutenberg.org/files/3454/3454-h/3454-h.htm"
   },
   "How Geirald The Coward Was Punished": {
-    "anchor": "link2H_4_0010",
+    "anchor": "chap09",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -306,7 +300,7 @@
     "url": "https://www.gutenberg.org/files/640/640-h/640-h.htm"
   },
   "How Some Wild Animals Became Tame Ones": {
-    "anchor": "link2H_4_0017",
+    "anchor": "chap18",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -372,7 +366,7 @@
     "url": "https://www.gutenberg.org/files/640/640-h/640-h.htm"
   },
   "Jack And The Beanstalk": {
-    "anchor": "link2H_4_0012",
+    "anchor": "chap12",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -402,7 +396,7 @@
     "url": "https://www.gutenberg.org/files/7277/7277-h/7277-h.htm"
   },
   "Kari Woodengown": {
-    "anchor": "link2H_4_0018",
+    "anchor": "chap18",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -420,7 +414,7 @@
     "url": "https://www.gutenberg.org/files/5615/5615-h/5615-h.htm"
   },
   "Kisa the Cat": {
-    "anchor": "link2H_4_0023",
+    "anchor": "chap24",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -492,7 +486,7 @@
     "url": "https://www.gutenberg.org/files/5615/5615-h/5615-h.htm"
   },
   "Minnikin": {
-    "anchor": "link2H_4_0031",
+    "anchor": "chap31",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -510,7 +504,7 @@
     "url": "https://www.gutenberg.org/files/6746/6746-h/6746-h.htm"
   },
   "Mother Holle": {
-    "anchor": "link2H_4_0030",
+    "anchor": "chap30",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -546,7 +540,7 @@
     "url": "https://www.gutenberg.org/files/3027/3027-h/3027-h.htm"
   },
   "Pivi and Kabo": {
-    "anchor": "link2H_4_0015",
+    "anchor": "chap16",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -600,7 +594,7 @@
     "url": "https://www.gutenberg.org/files/5615/5615-h/5615-h.htm"
   },
   "Princess Rosette": {
-    "anchor": "link2H_4_0009",
+    "anchor": "chap08",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -618,7 +612,7 @@
     "url": "https://www.gutenberg.org/files/7277/7277-h/7277-h.htm"
   },
   "Rapunzel": {
-    "anchor": "link2H_4_0027",
+    "anchor": "chap27",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -628,12 +622,6 @@
     "author": "Andrew Lang",
     "book": "Green Fairy Book",
     "url": "https://www.gutenberg.org/files/7277/7277-h/7277-h.htm"
-  },
-  "Rubezahl": {
-    "anchor": "link2H_4_0026",
-    "author": "Andrew Lang",
-    "book": "Brown Fairy Book",
-    "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
   },
   "Rumpelstiltzkin": {
     "anchor": "link2H_4_0010",
@@ -660,7 +648,7 @@
     "url": "https://www.gutenberg.org/files/503/503-h/503-h.htm"
   },
   "Snowdrop": {
-    "anchor": "link2H_4_0033",
+    "anchor": "chap33",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -672,7 +660,7 @@
     "url": "https://www.gutenberg.org/files/5615/5615-h/5615-h.htm"
   },
   "Soria Moria Castle": {
-    "anchor": "link2H_4_0004",
+    "anchor": "chap03",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -695,12 +683,6 @@
     "book": "Yellow Fairy Book",
     "url": "https://www.gutenberg.org/files/640/640-h/640-h.htm"
   },
-  "Story of Wali Dad the Simple-Hearted": {
-    "anchor": "link2H_4_0027",
-    "author": "Andrew Lang",
-    "book": "Brown Fairy Book",
-    "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
-  },
   "Story of the King Who Would See Paradise": {
     "anchor": "link2H_4_0005",
     "author": "Andrew Lang",
@@ -714,7 +696,7 @@
     "url": "https://www.gutenberg.org/files/7277/7277-h/7277-h.htm"
   },
   "Tale of a Tortoise and of a Mischievous Monkey": {
-    "anchor": "link2H_4_0028",
+    "anchor": "chap31",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -786,7 +768,7 @@
     "url": "https://www.gutenberg.org/files/503/503-h/503-h.htm"
   },
   "The Black Thief And Knight Of The Glen.": {
-    "anchor": "link2H_4_0006",
+    "anchor": "chap05",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -846,7 +828,7 @@
     "url": "https://www.gutenberg.org/files/3454/3454-h/3454-h.htm"
   },
   "The Bunyip": {
-    "anchor": "link2H_4_0006",
+    "anchor": "chap04",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -906,7 +888,7 @@
     "url": "https://www.gutenberg.org/files/7277/7277-h/7277-h.htm"
   },
   "The Cunning Hare": {
-    "anchor": "link2H_4_0009",
+    "anchor": "chap07",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -936,7 +918,7 @@
     "url": "https://www.gutenberg.org/files/2435/2435-h/2435-h.htm"
   },
   "The Death Of Koshchei The Deathless": {
-    "anchor": "link2H_4_0005",
+    "anchor": "chap04",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -972,13 +954,13 @@
     "url": "https://www.gutenberg.org/files/640/640-h/640-h.htm"
   },
   "The Elf Maiden": {
-    "anchor": "link2H_4_0016",
+    "anchor": "chap17",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
   },
   "The Enchanted Canary": {
-    "anchor": "link2H_4_0025",
+    "anchor": "chap25",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -990,7 +972,7 @@
     "url": "https://www.gutenberg.org/files/3454/3454-h/3454-h.htm"
   },
   "The Enchanted Head": {
-    "anchor": "link2H_4_0019",
+    "anchor": "chap20",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -1104,7 +1086,7 @@
     "url": "https://www.gutenberg.org/files/3454/3454-h/3454-h.htm"
   },
   "The Fox and the Lapp": {
-    "anchor": "link2H_4_0022",
+    "anchor": "chap23",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -1188,7 +1170,7 @@
     "url": "https://www.gutenberg.org/files/7277/7277-h/7277-h.htm"
   },
   "The Golden Branch": {
-    "anchor": "link2H_4_0022",
+    "anchor": "chap22",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1200,7 +1182,7 @@
     "url": "https://www.gutenberg.org/files/640/640-h/640-h.htm"
   },
   "The Golden Goose": {
-    "anchor": "link2H_4_0034",
+    "anchor": "chap34",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1313,12 +1295,6 @@
     "book": "Pink Fairy Book",
     "url": "https://www.gutenberg.org/files/5615/5615-h/5615-h.htm"
   },
-  "The Husband of the Rat's Daughter": {
-    "anchor": "link2H_4_0014",
-    "author": "Andrew Lang",
-    "book": "Brown Fairy Book",
-    "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
-  },
   "The Iron Stove": {
     "anchor": "link2H_4_0008",
     "author": "Andrew Lang",
@@ -1368,13 +1344,13 @@
     "url": "https://www.gutenberg.org/files/2435/2435-h/2435-h.htm"
   },
   "The Lion and the Cat": {
-    "anchor": "link2H_4_0024",
+    "anchor": "chap25",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
   },
   "The Little Good Mouse": {
-    "anchor": "link2H_4_0013",
+    "anchor": "chap13",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1452,7 +1428,7 @@
     "url": "https://www.gutenberg.org/files/5615/5615-h/5615-h.htm"
   },
   "The Marvellous Musician": {
-    "anchor": "link2H_4_0036",
+    "anchor": "chap36",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1464,7 +1440,7 @@
     "url": "https://www.gutenberg.org/files/503/503-h/503-h.htm"
   },
   "The Master Thief": {
-    "anchor": "link2H_4_0007",
+    "anchor": "chap06",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1494,7 +1470,7 @@
     "url": "https://www.gutenberg.org/files/641/641-h/641-h.htm"
   },
   "The Nettle Spinner": {
-    "anchor": "link2H_4_0028",
+    "anchor": "chap28",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1512,7 +1488,7 @@
     "url": "https://www.gutenberg.org/files/641/641-h/641-h.htm"
   },
   "The Norka": {
-    "anchor": "link2H_4_0010",
+    "anchor": "chap10",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1566,7 +1542,7 @@
     "url": "https://www.gutenberg.org/files/2435/2435-h/2435-h.htm"
   },
   "The Prince and the Three Fates": {
-    "anchor": "link2H_4_0021",
+    "anchor": "chap22",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -1578,7 +1554,7 @@
     "url": "https://www.gutenberg.org/files/3027/3027-h/3027-h.htm"
   },
   "The Princess Mayblossom": {
-    "anchor": "link2H_4_0003",
+    "anchor": "chap02",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1608,7 +1584,7 @@
     "url": "https://www.gutenberg.org/files/3454/3454-h/3454-h.htm"
   },
   "The Ratcatcher": {
-    "anchor": "link2H_4_0020",
+    "anchor": "chap20",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1643,12 +1619,6 @@
     "book": "Orange Fairy Book",
     "url": "https://www.gutenberg.org/files/3027/3027-h/3027-h.htm"
   },
-  "The Sacred Milk of Koumongoe": {
-    "anchor": "link2H_4_0012",
-    "author": "Andrew Lang",
-    "book": "Brown Fairy Book",
-    "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
-  },
   "The Sea King's Gift": {
     "anchor": "link2H_4_0022",
     "author": "Andrew Lang",
@@ -1656,7 +1626,7 @@
     "url": "https://www.gutenberg.org/files/3454/3454-h/3454-h.htm"
   },
   "The Seven Foals": {
-    "anchor": "link2H_4_0035",
+    "anchor": "chap35",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1680,7 +1650,7 @@
     "url": "https://www.gutenberg.org/files/6746/6746-h/6746-h.htm"
   },
   "The Sister of the Sun": {
-    "anchor": "link2H_4_0020",
+    "anchor": "chap21",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -1692,7 +1662,7 @@
     "url": "https://www.gutenberg.org/files/2435/2435-h/2435-h.htm"
   },
   "The Six Sillies": {
-    "anchor": "link2H_4_0017",
+    "anchor": "chap17",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1836,7 +1806,7 @@
     "url": "https://www.gutenberg.org/files/503/503-h/503-h.htm"
   },
   "The Story Of Sigurd": {
-    "anchor": "link2H_4_0037",
+    "anchor": "chap37",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -1920,7 +1890,7 @@
     "url": "https://www.gutenberg.org/files/6746/6746-h/6746-h.htm"
   },
   "The Story of the Yara": {
-    "anchor": "link2H_4_0008",
+    "anchor": "chap06",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -1980,7 +1950,7 @@
     "url": "https://www.gutenberg.org/files/7277/7277-h/7277-h.htm"
   },
   "The Three Dwarfs": {
-    "anchor": "link2H_4_0023",
+    "anchor": "chap23",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -2004,7 +1974,7 @@
     "url": "https://www.gutenberg.org/files/641/641-h/641-h.htm"
   },
   "The Three Princesses Of Whiteland": {
-    "anchor": "link2H_4_0015",
+    "anchor": "chap15",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -2045,20 +2015,14 @@
     "book": "Pink Fairy Book",
     "url": "https://www.gutenberg.org/files/5615/5615-h/5615-h.htm"
   },
-  "The True History Of Little Golden Hood": {
-    "anchor": "link2H_4_0021",
-    "author": "Andrew Lang",
-    "book": "Red Fairy Book",
-    "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
-  },
   "The Twelve Brothers": {
-    "anchor": "link2H_4_0026",
+    "anchor": "chap26",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
   },
   "The Twelve Dancing Princesses": {
-    "anchor": "link2H_4_0002",
+    "anchor": "chap01",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -2112,7 +2076,7 @@
     "url": "https://www.gutenberg.org/files/6746/6746-h/6746-h.htm"
   },
   "The Voice Of Death": {
-    "anchor": "link2H_4_0016",
+    "anchor": "chap16",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -2178,7 +2142,7 @@
     "url": "https://www.gutenberg.org/files/6746/6746-h/6746-h.htm"
   },
   "The Wicked Wolverine": {
-    "anchor": "link2H_4_0013",
+    "anchor": "chap13",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
@@ -2208,7 +2172,7 @@
     "url": "https://www.gutenberg.org/files/640/640-h/640-h.htm"
   },
   "The Wonderful Birch": {
-    "anchor": "link2H_4_0011",
+    "anchor": "chap11",
     "author": "Andrew Lang",
     "book": "Red Fairy Book",
     "url": "https://www.gutenberg.org/files/540/540-h/540-h.htm"
@@ -2236,12 +2200,6 @@
     "author": "Andrew Lang",
     "book": "Blue Fairy Book",
     "url": "https://www.gutenberg.org/files/503/503-h/503-h.htm"
-  },
-  "The Yellow Fairy Book": {
-    "anchor": "link2H_4_0002",
-    "author": "Andrew Lang",
-    "book": "Yellow Fairy Book",
-    "url": "https://www.gutenberg.org/files/640/640-h/640-h.htm"
   },
   "The Young Man Who Would Have His Eyes Opened": {
     "anchor": "link2H_4_0028",
@@ -2316,13 +2274,13 @@
     "url": "https://www.gutenberg.org/files/6746/6746-h/6746-h.htm"
   },
   "What the Rose did to the Cypress": {
-    "anchor": "link2H_4_0002",
+    "anchor": "chap01",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
   },
   "Which was the Foolishest?": {
-    "anchor": "link2H_4_0025",
+    "anchor": "chap26",
     "author": "Andrew Lang",
     "book": "Brown Fairy Book",
     "url": "https://www.gutenberg.org/files/3282/3282-h/3282-h.htm"
