@@ -4,6 +4,11 @@
 submission file for https://github.com/OpenVoiceOS/OVOS-skills-store
 (validated locally with their `scripts/apply_submission.py`).
 
+**Icon**: currently reusing `story-512.png` from `ovos-skill-fairytales`
+as a placeholder. TODO: swap the rainbow for a simple globe with
+lines of longitude/latitude once there's time to make a proper variant.
+
+
 **Not submitted yet** - the store requires the skill to be a finished,
 installable release, and this skill isn't published to PyPI yet.
 
