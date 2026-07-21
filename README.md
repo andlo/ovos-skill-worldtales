@@ -1,6 +1,17 @@
 # World Tales
 Classic fairy tales and folklore from around the world, read aloud by OVOS.
 
+> **⚠️ This skill is no longer under active development.** It works, and
+> will keep working, but new work is going into the
+> [ovos-skill-common-tales](https://github.com/andlo/ovos-skill-common-tales)
+> ecosystem instead - a proper orchestrator plus separate provider skills
+> (starting with `ovos-skill-andersen-tales` and `ovos-skill-grimm-tales`,
+> with an `ovos-skill-andrew-lang-tales` provider planned next). That
+> approach avoids the voice-command conflicts this skill runs into when
+> installed alongside other storyteller skills like
+> `ovos-skill-fairytales`, and is where future languages/sources will
+> land. New installs should probably start there instead.
+
 [![Tests](https://github.com/andlo/ovos-skill-worldtales/actions/workflows/test.yml/badge.svg)](https://github.com/andlo/ovos-skill-worldtales/actions/workflows/test.yml)
 [![PyPI version](https://img.shields.io/pypi/v/ovos-skill-worldtales.svg)](https://pypi.org/project/ovos-skill-worldtales/)
 
