@@ -12,5 +12,13 @@
     "read me a fairy tale",
     "continue the story"
   ],
-  "tags": ["entertainment", "stories", "fairytales", "folklore", "andrewlang", "gutenberg"]
+  "tags": [
+    "entertainment",
+    "stories",
+    "fairytales",
+    "folklore",
+    "andrewlang",
+    "gutenberg"
+  ],
+  "icon": "https://raw.githubusercontent.com/andlo/ovos-skill-worldtales/main/story-512.png"
 }
