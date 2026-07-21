@@ -1,0 +1,30 @@
+{
+  "skill_id": "ovos-skill-worldtales.andlo",
+  "source": "https://github.com/andlo/ovos-skill-worldtales",
+  "package_name": "ovos-skill-worldtales",
+  "name": "World Tales",
+  "description": "Classic fairy tales and folklore from around the world, starting with Andrew Lang's Fairy Books, sourced from Project Gutenberg.",
+  "examples": [
+    "tell me a story about the twelve dancing princesses",
+    "read me a fairy tale",
+    "continue the story"
+  ],
+  "tags": [
+    "entertainment",
+    "stories",
+    "fairytales",
+    "folklore",
+    "gutenberg"
+  ],
+  "images": [],
+  "license": "gpl-3.0",
+  "extra_plugins": {
+    "core": [],
+    "PHAL": [],
+    "listener": [],
+    "audio": [],
+    "media": [],
+    "gui": []
+  },
+  "author": "andlo"
+}
